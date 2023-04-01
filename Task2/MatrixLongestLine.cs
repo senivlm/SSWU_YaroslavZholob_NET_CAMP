@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SigmaHomeTask1.Task2
-{
+{// якщо все так відкрито, то, можливо, краще структуру?
     internal class Chain
     {
         public int Value { get; set; }
@@ -42,7 +42,7 @@ namespace SigmaHomeTask1.Task2
             for (int i = 0; i < N; i++)
             {
                 for (int j = 0; j < M; j++)
-                {
+                {// От цієї чарівної константи нам тут не треба)
                     array[i, j] = random.Next(0, 17);
                 }
             }
@@ -57,7 +57,7 @@ namespace SigmaHomeTask1.Task2
             int? value = null;
             int startIndex = 0;
             int count = 0;
-
+// Алгоритмічно неправильно!
             for (int row = 0; row < rowLength; row++)
             {
                 for (int column = 0; column < columnLength; column++)
@@ -92,7 +92,7 @@ namespace SigmaHomeTask1.Task2
                 });
 
             }
-
+//Роздруку тут не потрібно, слід повернути результат в методі, наприклад кортежем, а ще краще екземпляром класу, або через ref,out параметри....
             var longestSequence = sequences.OrderByDescending(m => m.Count).First();
 
             Console.WriteLine($"\nColor: {longestSequence.Value}\nStart index: {longestSequence.BeginIndex}\nEnd index: {longestSequence.BeginIndex + longestSequence.Count - 1}\nLength {longestSequence.Count}");
