@@ -25,7 +25,7 @@ namespace SigmaHomeTask1.Task1
             int maxColumn = M - 1;
             int maxRow = N - 1;
             int min = 0;
-
+// Є надлишкова змінна, наприклад, i. у цьому контексті вона збігається з змінною numberToBeginWith. Можна ще оптимізувати по умовах.
             for (int i = 1; i <= N * M; i++)
             {
                 array[row, column] = numberToBeginWith;
@@ -84,7 +84,7 @@ namespace SigmaHomeTask1.Task1
         }
 
         public override string? ToString()
-        {
+        {// Краще працювати з StringBuilder, а вкінці його звести до String/
             string output = "";
             for (int i = 0; i < array.GetLength(0); i++)
             {
