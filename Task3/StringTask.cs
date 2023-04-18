@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace SigmaHomeTask1.Task3
-{
+{//Освоїли лінки гарно!)))
     internal class StringTask
     {
         //Знайти індекс другого входження заданої підстрічки в текст, якщо таке
