@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
-{
+{// Ну якщо список, то треба багатопотоковість, інакше складно...
     internal class WaterSupplySystem
     {
         //Simulating pumpimg water to water tower
