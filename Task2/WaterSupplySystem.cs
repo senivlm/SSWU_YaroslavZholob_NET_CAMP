@@ -19,6 +19,7 @@ namespace ConsoleApp1
         public void WaterUsage()
         {
             List<User> concreteUsers = new List<User>();
+            // Тут хардкоду точно не треба. найкраще мати класи генераторів, побудовані за різними стратегіями.
             concreteUsers.AddRange(new List<ConcreteUser>{ new ConcreteUser(20), new ConcreteUser(30), new ConcreteUser(40), 
                                                            new ConcreteUser(50), new ConcreteUser(15), new ConcreteUser(200),
                                                            new ConcreteUser(20), new ConcreteUser(60), new ConcreteUser(100)});
