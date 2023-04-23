@@ -20,7 +20,7 @@ namespace ConsoleApp.Ex1
                 sentences.Add(text.Substring(a + 1, b - a));
                 return b;
             });
-
+//застосування регулярних є не правильним.
             return sentences.Where(s => Regex.IsMatch(s, @"(\(.*\)|\{.*\}|\[.*\])"))
                             .Select(s => s)
                             .ToList();
