@@ -9,7 +9,7 @@ using static System.Net.Mime.MediaTypeNames;
 namespace ConsoleApp.Ex2
 {
     internal static class EmailAnalyzer
-    {
+    {// Цей регулярний вираз не відповідає тим вимогам, які задані. Крім того зазначалось, що цю задачу слід розв'язати без використання регулярних виразів.
         private static string addressRegex = @"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b";
         private static string lexemeRegex = @"\b\w+@\w+\b";
 
