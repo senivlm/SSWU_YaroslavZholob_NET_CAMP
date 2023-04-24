@@ -1,7 +1,7 @@
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
-
+// Ваші бали:90	0	0	95	85	70	0	68
 namespace ConsoleApp.Ex1
 {
     internal static class TextFromParentheses
